@@ -9,7 +9,7 @@ pip3 install -r requirements.txt
 ## Run
 
 ```bash
-py code_to_uri.py ./pics/spotify_playlist_37i9dQZF1DXcBWIGoYBM5M.jpg
+python code_to_uri.py ./pics/spotify_playlist_37i9dQZF1DXcBWIGoYBM5M.jpg
 ```
 
 ## Output
