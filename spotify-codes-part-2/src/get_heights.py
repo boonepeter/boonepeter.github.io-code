@@ -7,20 +7,12 @@ from skimage.color import rgb2gray
 def get_heights(filename: str) -> list:
     """Open an image and return a list of the bar heights.
     """
-    # convert to grayscale, then binary
     image = io.imread(filename)
     im = rgb2gray(image)
     binary_im = im > threshold_otsu(im)
-
-    # label connected regions as objects
     labeled = label(binary_im)
-
-    # get the dimensions and positions of bounding box around objects
     bar_dimensions = [r.bbox for r in regionprops(labeled)]
-
-    # sort by X
     bar_dimensions.sort(key=lambda x: x[1], reverse=False)
-
     # the first object (spotify logo) is the max height of the bars
     logo = bar_dimensions[0]
     max_height = logo[2] - logo[0]
