@@ -23,8 +23,10 @@ Heights: [0, 6, 0, 2, 4, 5, 1, 4, 5, 2, 3, 7, 3, 7, 1, 5, 6, 2, 5, 7, 4, 3, 0]
 Media ref: 57268659651
 URI: spotify:user:spotify:playlist:37i9dQZF1DXcBWIGoYBM5M
 Summary:
-{'description': 'Coldplay & BTS are on top of the Hottest 50!',
- 'name': "Today's Top Hits",
- 'type': 'playlist',
- 'url': 'https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M'}
+{
+  'description': 'Coldplay & BTS are on top of the Hottest 50!',
+  'name': "Today's Top Hits",
+  'type': 'playlist',
+  'url': 'https://open.spotify.com/playlist/37i9dQZF1DXcBWIGoYBM5M'
+}
 ```

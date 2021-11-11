@@ -10,6 +10,8 @@ parser = argparse.ArgumentParser(description="Spotify Barcode Decoder.")
 parser.add_argument("filename", help="The filename of the barcode to decode.")
 parser.add_argument("--token", required=True, help="Your Spotify authorization token.")
 
+
+
 if __name__ == "__main__":
     args = parser.parse_args()
     filename = args.filename
